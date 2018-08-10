@@ -1,0 +1,30 @@
+{
+  "name": "list-of-ingredients",
+  "version": "1.0.0",
+  "description": "This README would normally document whatever steps are necessary to get the application up and running.",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "yarn --cwd client install && yarn --cwd client build",
+    "deploy": "cp -a client/build/. public/",
+    "heroku-postbuild": "yarn build && yarn deploy"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Pixelshot/list-of-ingredients.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "engines": {
+    "node": "8.9.4",
+    "yarn": "1.6.0"
+  },
+  "bugs": {
+    "url": "https://github.com/Pixelshot/list-of-ingredients/issues"
+  },
+  "homepage": "https://github.com/Pixelshot/list-of-ingredients"
+}
